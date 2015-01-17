@@ -37,6 +37,6 @@ public class MainActivity extends ActionBarActivity {
     private void startStory(String name){
         Intent intent = new Intent(this, StoryActivity.class);
         startActivity(intent);
-        intent.putExtra("name", name);
+        intent.putExtra(getString(R.string.key_name), name);
     }
 }
