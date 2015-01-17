@@ -33,7 +33,7 @@ public class StoryActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_story);
         Intent intent = getIntent();
-        String mName = intent.getStringExtra(getString(R.string.key_name));
+        mName = intent.getStringExtra(getString(R.string.key_name));
         if (mName == null){
             mName = "Andy";
         }
